@@ -33,6 +33,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Quartz" Version="3.0.0-beta1" />
-    <ProjectReference Include="..\ServiceStack\src\ServiceStack.Server\ServiceStack.Server.csproj" />
+    <ProjectReference Include="..\..\..\ServiceStack\src\ServiceStack.Server\ServiceStack.Server.csproj" />
   </ItemGroup>
 </Project>
