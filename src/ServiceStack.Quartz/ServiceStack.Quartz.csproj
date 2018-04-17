@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Copyright>Copyright © 2017</Copyright>
-    <TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;</TargetFrameworks>
     <Configurations>Debug;Release</Configurations>
     <Title>ServiceStack.Quartz</Title>
     <Description>Easy job scheduling for ServiceStack - https://wwwlicious.github.io/ServiceStack.Quartz/</Description>
@@ -11,8 +11,8 @@
     <RequireLicenseAcceptance>false</RequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RunCodeAnalysis>false</RunCodeAnalysis>
-    <PackageId>ServiceStack.Quartz</PackageId>
-    <Version>$(VersionNumber)</Version>
+    <PackageId>FOSS.ServiceStack.Quartz.Core</PackageId>
+    <Version>5.0.2</Version>
     <PackageOutputPath>$(PackageOutputPath)</PackageOutputPath>
     <PackageLicenseUrl>https://opensource.org/licenses/MPL-2.0</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/wwwlicious/ServiceStack.Quartz</PackageProjectUrl>
@@ -22,14 +22,6 @@
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
     <RepositoryUrl>https://github.com/wwwlicious/ServiceStack.Quartz</RepositoryUrl>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net452|AnyCPU'">
-    <DefineConstants>TRACE;DEBUG;NET452;</DefineConstants>
-    <DocumentationFile>bin\Debug\net452\ServiceStack.Quartz.xml</DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net452|AnyCPU'">
-    <DefineConstants>TRACE;DEBUG;NET452</DefineConstants>
-    <DocumentationFile>bin\Release\net452\ServiceStack.Quartz.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
     <DefineConstants>TRACE;DEBUG;NETSTANDARD2_0;</DefineConstants>
@@ -41,6 +33,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Quartz" Version="3.0.0-beta1" />
-    <PackageReference Include="ServiceStack.Server" Version="5.0.0" />
+    <PackageReference Include="FOSS.ServiceStack.Server.Core" Version="5.0.2" />
   </ItemGroup>
 </Project>
